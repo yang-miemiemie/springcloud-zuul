@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://clouddemo:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: springcloud-zuul
+zuul:
+  routes:
+    springcloud-spider:
+      path: /spider/**
+      serviceId: springcloud-spider
