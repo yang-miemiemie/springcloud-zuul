@@ -15,3 +15,6 @@ zuul:
     springcloud-spider:
       path: /spider/**
       serviceId: springcloud-spider
+    springcloud-fang:
+      path: /fang/**
+      serviceId: springcloud-fang
