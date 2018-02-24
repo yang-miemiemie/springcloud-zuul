@@ -11,6 +11,7 @@ spring:
   application:
     name: springcloud-zuul
 zuul:
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   routes:
     springcloud-spider:
       path: /spider/**
